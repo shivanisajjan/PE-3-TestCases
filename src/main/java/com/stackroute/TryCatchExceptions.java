@@ -4,7 +4,7 @@ class name{
 }
 public class TryCatchExceptions {
     int index;
-    name n=null;
+    name n=new name();
     int size;
     int[] array;
     public String negativeArraySizeException(int size){
@@ -12,6 +12,7 @@ public class TryCatchExceptions {
     }
     public String nullPointerException(){
         //try to access n
+        n=null;
         return null;
     }
     public String indexOutOfBoundsException(int size,int index){

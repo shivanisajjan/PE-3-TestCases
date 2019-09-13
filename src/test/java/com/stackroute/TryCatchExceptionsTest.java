@@ -27,6 +27,7 @@ public class TryCatchExceptionsTest {
     public void negativeArraySizeExceptionstest(){
         NegativeArraySizeException e=new NegativeArraySizeException();
         String s=e.toString();
+        System.out.println(s);
         assertEquals(s, tryCatchExceptions.negativeArraySizeException(-1));
     }
     @Test
